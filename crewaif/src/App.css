@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f0f4f8;
+  --text-color: #333;
+  --card-background: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabs {
+  margin-top: 2rem;
+}
+
+.tab-content {
+  background-color: var(--card-background);
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+}
+
+.agent-status {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.agent-status svg {
+  margin-right: 0.5rem;
+}
+
+.result-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
